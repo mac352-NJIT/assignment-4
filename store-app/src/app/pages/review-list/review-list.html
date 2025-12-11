@@ -1,0 +1,12 @@
+<div class="container">  
+    <div class="row">
+    <div class="col-12">
+      <h2>{{ product?.name }}</h2>
+      <img [src]="product?.image" alt="{{ product?.name }}" class="img-fluid">
+      <p>{{ product?.description }}</p>
+      <p>Price: ${{ product?.price }}</p>
+      <button class="btn btn-success" (click)="submitReview()">Submit Order</button>
+      <p *ngIf="message">{{ message }}</p>
+    </div>
+  </div>
+</div>
