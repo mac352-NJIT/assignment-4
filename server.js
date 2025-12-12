@@ -15,7 +15,7 @@ const items = [
 
 let itemsSelected = [];
 
-app.get('/api/products', (req, res) => {
+app.get('/api/product', (req, res) => {
     res.json(items);
 })
 

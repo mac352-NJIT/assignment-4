@@ -7,7 +7,7 @@ export class Items {
   constructor(private http: HttpClient) {}
 
   getItems(): Observable<any> {
-    return this.http.get('api/products');
+    return this.http.get('api/product');
   }
 
   selectProduct(product : any): Observable<any> {
